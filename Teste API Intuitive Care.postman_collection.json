@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "4e5cae46-8669-4ae8-9151-e9e27ecee1f2",
+		"name": "Teste API Intuitive Care",
+		"description": "A API permite realizar buscas por operadoras de saúde a partir de um termo textual fornecido pelo usuário. Ela processa o termo de busca e retorna informações relevantes, como Nome Fantasia, Razão Social, Cidade e UF, diretamente de um arquivo CSV. É útil para filtrar e acessar dados específicos com rapidez e precisão.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43573156",
+		"_collection_link": "https://matheuspizanidealbuquerque.postman.co/workspace/619787e3-5b39-41db-86a7-c6149b52b896/collection/43573156-4e5cae46-8669-4ae8-9151-e9e27ecee1f2?action=share&source=collection_link&creator=43573156"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar?q=odontologica",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "odontologica"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/buscar?q=odontologica",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "odontologica"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"registro_ans\": \"415952\",\r\n        \"nome_fantasia\": \"CDA ASSISTENCIA ODONTOLOGICA LTDA-EPP\",\r\n        \"razao_social\": \"CDA - ASSISTÊNCIA ODONTOLÓGICA LTDA - EPP\",\r\n        \"cidade\": \"Campinas\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"410071\",\r\n        \"nome_fantasia\": \"ODONTOPLAN\",\r\n        \"razao_social\": \"CLINICA ODONTOLOGICA ODONTOPLAN LTDA\",\r\n        \"cidade\": \"Novo Hamburgo\",\r\n        \"UF\": \"RS\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"405931\",\r\n        \"nome_fantasia\": \"CONSTRUDENTE\",\r\n        \"razao_social\": \"CONSTRUDENTE ASSISTENCIA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"386219\",\r\n        \"nome_fantasia\": \"ODONTOLOGICA\",\r\n        \"razao_social\": \"DENTAL CARE CLINICA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"Avaré\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"333620\",\r\n        \"nome_fantasia\": \"ORALMED ASSISTENCIA ODONTOLOGICA\",\r\n        \"razao_social\": \"DENTAL-MED ASSISTENCIA ODONTOLOGICA S/S LTDA\",\r\n        \"cidade\": \"Londrina\",\r\n        \"UF\": \"PR\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"416908\",\r\n        \"nome_fantasia\": \"DENTALPLAN VALE DO SÃO FRANCISCO\",\r\n        \"razao_social\": \"DENTALPLAN PLANOS DE ASSISTENCIA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"Petrolina\",\r\n        \"UF\": \"PE\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"422088\",\r\n        \"nome_fantasia\": \"\",\r\n        \"razao_social\": \"ODONT-OPERADORA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"422355\",\r\n        \"nome_fantasia\": \"PRODENTAL BRASIL ASSISTENCIA ODONTOLOGICA\",\r\n        \"razao_social\": \"PD BRASIL ASSISTENCIA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"Salvador\",\r\n        \"UF\": \"BA\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"410420\",\r\n        \"nome_fantasia\": \"PREV-DONT\",\r\n        \"razao_social\": \"PREV-DONT ODONTOLOGICA LTDA.\",\r\n        \"cidade\": \"Fortaleza\",\r\n        \"UF\": \"CE\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"413941\",\r\n        \"nome_fantasia\": \"DENTAL MED CENTER\",\r\n        \"razao_social\": \"SOCIEDADE DE ASSISTÊNCIA ODONTOLOGICA DE GRUPO/RN - DENTAL MED CENTER/RN\",\r\n        \"cidade\": \"Natal\",\r\n        \"UF\": \"RN\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"413429\",\r\n        \"nome_fantasia\": \"UNIDENTIS ASSISTÊNCIA ODONTOLÓGICA LTDA\",\r\n        \"razao_social\": \"UNIDENTIS ASSISTENCIA ODONTOLOGICA LTDA.\",\r\n        \"cidade\": \"João Pessoa\",\r\n        \"UF\": \"PB\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"414891\",\r\n        \"nome_fantasia\": \"UNIODONTO CARUARU\",\r\n        \"razao_social\": \"UNIODONTO - COOPERATIVA ODONTOLOGICA DE CARUARU E REGIÃO AGRESTE DO ESTADO DE PERNAMBUCO\",\r\n        \"cidade\": \"Caruaru\",\r\n        \"UF\": \"PE\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"383929\",\r\n        \"nome_fantasia\": \"UNIODONTO BAHIA SUL\",\r\n        \"razao_social\": \"UNIODONTO BAHIA SUL - COOPERATIVA ODONTOLOGICA DE ILHEUS RESPONSABILIDADE LTDA\",\r\n        \"cidade\": \"Ilhéus\",\r\n        \"UF\": \"BA\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"362824\",\r\n        \"nome_fantasia\": \"UNIODONTO ARACATUBA\",\r\n        \"razao_social\": \"UNIODONTO DE ARAÇATUBA COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Araçatuba\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"347477\",\r\n        \"nome_fantasia\": \"UNIODONTO BOTUCATU\",\r\n        \"razao_social\": \"UNIODONTO DE BOTUCATU COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Botucatu\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"347302\",\r\n        \"nome_fantasia\": \"UNIODONTO\",\r\n        \"razao_social\": \"UNIODONTO DE CACAPAVA COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Caçapava\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"402516\",\r\n        \"nome_fantasia\": \"UNIODONTO DE CAMPOS COOPERATIVA ODONTOLOGICA\",\r\n        \"razao_social\": \"UNIODONTO DE CAMPOS - COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Campos dos Goytacazes\",\r\n        \"UF\": \"RJ\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"301647\",\r\n        \"nome_fantasia\": \"\",\r\n        \"razao_social\": \"UNIODONTO DE FERNANDOPOLIS COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Fernandópolis\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"344681\",\r\n        \"nome_fantasia\": \"UNIODONTO DE LINS COOPERATIVA ODONTOLÓGICA\",\r\n        \"razao_social\": \"UNIODONTO DE LINS COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Lins\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"336238\",\r\n        \"nome_fantasia\": \"UNIODONTO DE MONTE ALTO\",\r\n        \"razao_social\": \"UNIODONTO DE MONTE ALTO COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Monte Alto\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"331104\",\r\n        \"nome_fantasia\": \"UNIODONTO PINDAMONHANGABA\",\r\n        \"razao_social\": \"UNIODONTO DE PINDAMONHANGABA COOP ODONTOLOGICA\",\r\n        \"cidade\": \"Pindamonhangaba\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"336017\",\r\n        \"nome_fantasia\": \"UNIODONTO DE PRESIDENTE PRUDENTE COOPERATIVA ODONTOLÓGICA\",\r\n        \"razao_social\": \"UNIODONTO DE PRESIDENTE PRUDENTE COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Presidente Prudente\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"349011\",\r\n        \"nome_fantasia\": \"UNIODONTO DE RIO CLARO\",\r\n        \"razao_social\": \"UNIODONTO DE RIO CLARO COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Rio Claro\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"373109\",\r\n        \"nome_fantasia\": \"UNIODONTO DE SERTAOZINHO\",\r\n        \"razao_social\": \"UNIODONTO DE SERTAOZINHO SP COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Sertãozinho\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"350630\",\r\n        \"nome_fantasia\": \"UNIODONTO DE VOTUPORANGA COOPERATIVA ODONTOLOGICA\",\r\n        \"razao_social\": \"UNIODONTO DE VOTUPORANGA COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Votuporanga\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"358339\",\r\n        \"nome_fantasia\": \"UNIODONTO DO SUL GOIANO\",\r\n        \"razao_social\": \"UNIODONTO DO SUL GOIANO COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Itumbiara\",\r\n        \"UF\": \"GO\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"370711\",\r\n        \"nome_fantasia\": \"UNIODONTO\",\r\n        \"razao_social\": \"UNIODONTO ESPIRITO SANTO COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Cachoeiro de Itapemirim\",\r\n        \"UF\": \"ES\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"381144\",\r\n        \"nome_fantasia\": \"UNIODONTO DE MARINGA\",\r\n        \"razao_social\": \"UNIODONTO MARINGA COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Maringá\",\r\n        \"UF\": \"PR\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"366439\",\r\n        \"nome_fantasia\": \"UNIODONTO PORTO ALEGRE COOPERATIVA ODONTOLOGICA LTDA\",\r\n        \"razao_social\": \"UNIODONTO PORTO ALEGRE COOPERATIVA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"Porto Alegre\",\r\n        \"UF\": \"RS\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"344451\",\r\n        \"nome_fantasia\": \"UNIODONTO MINAS\",\r\n        \"razao_social\": \"UNIODONTO REGIONAL COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Uberlândia\",\r\n        \"UF\": \"MG\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"406121\",\r\n        \"nome_fantasia\": \"UNIODONTO RESENDE COOPERATIVA ODONTOLOGICA\",\r\n        \"razao_social\": \"UNIODONTO RESENDE - COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Resende\",\r\n        \"UF\": \"RJ\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"367966\",\r\n        \"nome_fantasia\": \"\",\r\n        \"razao_social\": \"UNIODONTO RIO GRANDE-LITORAL COOPERATIVA ODONTOLOGICA LTDA\",\r\n        \"cidade\": \"Rio Grande\",\r\n        \"UF\": \"RS\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"382655\",\r\n        \"nome_fantasia\": \"UNIODONTO VALE HISTORICO COOPERATIVA ODONTOLOGICA\",\r\n        \"razao_social\": \"UNIODONTO VALE HISTORICO COOPERATIVA ODONTOLOGICA\",\r\n        \"cidade\": \"Lorena\",\r\n        \"UF\": \"SP\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"345318\",\r\n        \"nome_fantasia\": \"UNIODONTO/RN\",\r\n        \"razao_social\": \"UNIODONTO/RN - COOPERATIVA ODONTOLOGICA DO RIO GRANDE DO NORTE\",\r\n        \"cidade\": \"Natal\",\r\n        \"UF\": \"RN\"\r\n    },\r\n    {\r\n        \"registro_ans\": \"405582\",\r\n        \"nome_fantasia\": \"VIP ODONTO\",\r\n        \"razao_social\": \"VIP ASSISTENCIA ODONTOLOGICA LTDA.\",\r\n        \"cidade\": \"São Sebastião do Paraíso\",\r\n        \"UF\": \"MG\"\r\n    }\r\n]"
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,8 @@
-selenium
-webdriver-manager
-wget
-tabula-py
-JPype1
+selenium: webscraping
+webdriver-manager: webscraping
+pandas: transformação dados e banco de dados
+tabula-py: transformação dados
+JPype1: transformação dados
+Django: API
+Vue: API
+axios: API dentro do projeto do vue
